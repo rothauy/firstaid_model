@@ -51,7 +51,7 @@ def buildModel():
     model.add(Dense(64, kernel_initializer=kernel_initializer))
     model.add(Activation('relu'))
     model.add(Dropout(0.2))
-    model.add(Dense(7))
+    model.add(Dense(6))
     model.add(Activation('softmax'))
 
     optimizer = Adam(lr=0.0006)
@@ -63,7 +63,7 @@ def buildModel():
     # to non-trainable (weights will not be updated)
     # for layer in model.layers[:1]:
     #     layer.trainable = False
-.
+
     # the model so far outputs 3D feature maps (height, width, features)
     model.compile(loss='categorical_crossentropy',
                   optimizer= optimizer,
@@ -117,7 +117,7 @@ def generateData(batch_size,input_shape):
 def main():
 
     # variable
-    batch_size = 8
+    batch_size = 16
     input_shape = (150,150)
 
     train_generator, validation_generator, test_generator = generateData(batch_size,input_shape)
@@ -129,13 +129,13 @@ def main():
     #run
     model.fit_generator(
         train_generator,
-        steps_per_epoch= 400// batch_size,
+        steps_per_epoch= 500// batch_size,
         epochs=50,
         validation_data=validation_generator,
-        validation_steps= 60// batch_size)
+        validation_steps= 200// batch_size)
 
     #evaluating the model
-    score = model.evaluate_generator(test_generator, 60//batch_size)
+    score = model.evaluate_generator(test_generator, 180//batch_size)
     print("Loss: ", score[0], "Accuracy: ", score[1])
 
     # always save your weights after training or during training
