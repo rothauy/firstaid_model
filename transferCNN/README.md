@@ -1,6 +1,6 @@
 ### Transfer Learning
 
-#####ResNet50
+##### ResNet50
 The model was trained with ImageNet however, the result was about the same and somewhat worse than the Simple CNN.
 
 ##### Reference
