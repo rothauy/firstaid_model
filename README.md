@@ -1,13 +1,13 @@
 ﻿# firstaid_model
 
-##### List of trained CNN
+### List of trained CNN
 1. A simple CNN
 2. Transfer Learning CNN
    
    a. ResNet50
 3. Siamese Network
 
-##### Dataset
+### Dataset
 ###### This dataset were scraped off Google Image and sorted by me
 **Training**
 1. Abrasion - 60 images
