@@ -1,5 +1,5 @@
 ﻿### Siamese Network
-The test was incompleted due to the computing power of my person computer cannot run the model. When I adjusted the last Dense in the prediction to be small enough for it to run, the result was incorrect, where the accuracy would stuck at 50%.
+The test was incompleted due to the computing power of my person computer cannot run the model with output 4096. When I adjusted the last Dense in the prediction to be small enough for it to run, the result was incorrect, where the accuracy would stuck at 50%. This is another issue that I do not have enough of the variety of the data to back this model up. 
 
 
 ##### Reference
