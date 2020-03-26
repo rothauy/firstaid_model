@@ -1,0 +1,180 @@
+:\Users\Rotha Uy\Documents\firstaid_model\firstaid_model>python trainModel.py
+2020-02-12 23:46:50.933668: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2020-02-12 23:46:50.937977: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Found 531 images belonging to 6 classes.
+Found 183 images belonging to 6 classes.
+Found 177 images belonging to 6 classes.
+WARNING:tensorflow:From C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow_core\python\util\deprecation.py:507: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a 
+future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+WARNING:tensorflow:From C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-02-12 23:46:52.409428: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-02-12 23:46:52.437240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2070 major: 7 minor: 5 memoryClockRate(GHz): 1.62
+pciBusID: 0000:02:00.0
+2020-02-12 23:46:52.444332: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2020-02-12 23:46:52.449343: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cublas64_100.dll'; dlerror: cublas64_100.dll not found
+2020-02-12 23:46:52.454240: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cufft64_100.dll'; dlerror: cufft64_100.dll not found
+2020-02-12 23:46:52.459147: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'curand64_100.dll'; dlerror: curand64_100.dll not found
+2020-02-12 23:46:52.464176: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cusolver64_100.dll'; dlerror: cusolver64_100.dll not found
+2020-02-12 23:46:52.473366: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cusparse64_100.dll'; dlerror: cusparse64_100.dll not found
+2020-02-12 23:46:52.485466: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-02-12 23:46:52.488764: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-02-12 23:46:52.496657: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-02-12 23:46:52.509784: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-02-12 23:46:52.512531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]
+Epoch 1/50
+32/33 [============================>.] - ETA: 0s - loss: 1.7512 - acc: 0.2405Epoch 1/50
+33/33 [==============================] - 7s 219ms/step - loss: 1.7496 - acc: 0.2447 - val_loss: 1.7183 - val_acc: 0.2784
+Epoch 2/50
+32/33 [============================>.] - ETA: 0s - loss: 1.7164 - acc: 0.2345Epoch 1/50
+33/33 [==============================] - 7s 219ms/step - loss: 1.7160 - acc: 0.2369 - val_loss: 1.7195 - val_acc: 0.2784
+Epoch 3/50
+32/33 [============================>.] - ETA: 0s - loss: 1.7106 - acc: 0.2906Epoch 1/50
+33/33 [==============================] - 7s 207ms/step - loss: 1.7149 - acc: 0.2874 - val_loss: 1.7101 - val_acc: 0.2784
+Epoch 4/50
+32/33 [============================>.] - ETA: 0s - loss: 1.6956 - acc: 0.2605Epoch 1/50
+33/33 [==============================] - 7s 206ms/step - loss: 1.6945 - acc: 0.2621 - val_loss: 1.7224 - val_acc: 0.2784
+Epoch 5/50
+32/33 [============================>.] - ETA: 0s - loss: 1.7143 - acc: 0.2480Epoch 1/50
+33/33 [==============================] - 7s 210ms/step - loss: 1.7111 - acc: 0.2557 - val_loss: 1.7035 - val_acc: 0.2784
+Epoch 6/50
+32/33 [============================>.] - ETA: 0s - loss: 1.6890 - acc: 0.2593Epoch 1/50
+33/33 [==============================] - 6s 193ms/step - loss: 1.6948 - acc: 0.2530 - val_loss: 1.6976 - val_acc: 0.3239
+Epoch 7/50
+32/33 [============================>.] - ETA: 0s - loss: 1.6699 - acc: 0.2665Epoch 1/50
+33/33 [==============================] - 6s 194ms/step - loss: 1.6674 - acc: 0.2718 - val_loss: 1.6594 - val_acc: 0.2784
+Epoch 8/50
+32/33 [============================>.] - ETA: 0s - loss: 1.6439 - acc: 0.2986Epoch 1/50
+33/33 [==============================] - 6s 191ms/step - loss: 1.6512 - acc: 0.2932 - val_loss: 1.6128 - val_acc: 0.3693
+Epoch 9/50
+32/33 [============================>.] - ETA: 0s - loss: 1.5911 - acc: 0.3427Epoch 1/50
+33/33 [==============================] - 6s 184ms/step - loss: 1.5887 - acc: 0.3456 - val_loss: 1.5825 - val_acc: 0.3920
+Epoch 10/50
+32/33 [============================>.] - ETA: 0s - loss: 1.5621 - acc: 0.3667Epoch 1/50
+33/33 [==============================] - 6s 196ms/step - loss: 1.5631 - acc: 0.3631 - val_loss: 1.6926 - val_acc: 0.3352
+Epoch 11/50
+32/33 [============================>.] - ETA: 0s - loss: 1.5513 - acc: 0.3594Epoch 1/50
+33/33 [==============================] - 6s 189ms/step - loss: 1.5512 - acc: 0.3580 - val_loss: 1.6090 - val_acc: 0.3409
+Epoch 12/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4801 - acc: 0.3765Epoch 1/50
+33/33 [==============================] - 6s 185ms/step - loss: 1.4884 - acc: 0.3725 - val_loss: 1.5939 - val_acc: 0.3295
+Epoch 13/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4462 - acc: 0.4004Epoch 1/50
+33/33 [==============================] - 6s 189ms/step - loss: 1.4473 - acc: 0.4015 - val_loss: 1.6303 - val_acc: 0.3295
+Epoch 14/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4761 - acc: 0.3808Epoch 1/50
+33/33 [==============================] - 6s 193ms/step - loss: 1.4685 - acc: 0.3845 - val_loss: 1.6158 - val_acc: 0.3750
+Epoch 15/50
+31/33 [===========================>..] - ETA: 0s - loss: 1.4498 - acc: 0.3851Epoch 1/50
+33/33 [==============================] - 6s 187ms/step - loss: 1.4421 - acc: 0.3865 - val_loss: 1.5638 - val_acc: 0.3466
+Epoch 16/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4460 - acc: 0.4043Epoch 1/50
+33/33 [==============================] - 6s 182ms/step - loss: 1.4331 - acc: 0.4058 - val_loss: 1.5375 - val_acc: 0.3466
+Epoch 17/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4141 - acc: 0.4228Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.4184 - acc: 0.4175 - val_loss: 1.5507 - val_acc: 0.3693
+Epoch 18/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3634 - acc: 0.4248Epoch 1/50
+33/33 [==============================] - 6s 179ms/step - loss: 1.3657 - acc: 0.4233 - val_loss: 1.5534 - val_acc: 0.3693
+Epoch 19/50
+32/33 [============================>.] - ETA: 0s - loss: 1.4503 - acc: 0.4008Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.4431 - acc: 0.4058 - val_loss: 1.5411 - val_acc: 0.3920
+Epoch 20/50
+31/33 [===========================>..] - ETA: 0s - loss: 1.3728 - acc: 0.4778Epoch 1/50
+33/33 [==============================] - 6s 196ms/step - loss: 1.3762 - acc: 0.4680 - val_loss: 1.6298 - val_acc: 0.3864
+Epoch 21/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3840 - acc: 0.4473Epoch 1/50
+33/33 [==============================] - 6s 183ms/step - loss: 1.3753 - acc: 0.4508 - val_loss: 1.5252 - val_acc: 0.3693
+Epoch 22/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3838 - acc: 0.4012Epoch 1/50
+33/33 [==============================] - 6s 187ms/step - loss: 1.3827 - acc: 0.4024 - val_loss: 1.5708 - val_acc: 0.3750
+Epoch 23/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3583 - acc: 0.4199Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.3552 - acc: 0.4223 - val_loss: 1.5527 - val_acc: 0.3636
+Epoch 24/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3633 - acc: 0.4329Epoch 1/50
+33/33 [==============================] - 6s 181ms/step - loss: 1.3630 - acc: 0.4350 - val_loss: 1.5378 - val_acc: 0.3864
+Epoch 25/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3505 - acc: 0.4429Epoch 1/50
+33/33 [==============================] - 7s 207ms/step - loss: 1.3468 - acc: 0.4485 - val_loss: 1.5363 - val_acc: 0.3523
+Epoch 26/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3287 - acc: 0.4671Epoch 1/50
+33/33 [==============================] - 6s 177ms/step - loss: 1.3274 - acc: 0.4681 - val_loss: 1.5820 - val_acc: 0.3636
+Epoch 27/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3459 - acc: 0.4549Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.3394 - acc: 0.4583 - val_loss: 1.5099 - val_acc: 0.3523
+Epoch 28/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3234 - acc: 0.4648Epoch 1/50
+33/33 [==============================] - 6s 191ms/step - loss: 1.3132 - acc: 0.4659 - val_loss: 1.5510 - val_acc: 0.3864
+Epoch 29/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3721 - acc: 0.4509Epoch 1/50
+33/33 [==============================] - 6s 191ms/step - loss: 1.3737 - acc: 0.4505 - val_loss: 1.5085 - val_acc: 0.3864
+Epoch 30/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2716 - acc: 0.4930Epoch 1/50
+33/33 [==============================] - 6s 184ms/step - loss: 1.2689 - acc: 0.4913 - val_loss: 1.5577 - val_acc: 0.4261
+Epoch 31/50
+32/33 [============================>.] - ETA: 0s - loss: 1.3240 - acc: 0.4369Epoch 1/50
+33/33 [==============================] - 6s 187ms/step - loss: 1.3195 - acc: 0.4369 - val_loss: 1.4798 - val_acc: 0.3977
+Epoch 32/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2969 - acc: 0.4990Epoch 1/50
+33/33 [==============================] - 6s 186ms/step - loss: 1.2910 - acc: 0.5010 - val_loss: 1.5121 - val_acc: 0.4375
+Epoch 33/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2350 - acc: 0.5150Epoch 1/50
+33/33 [==============================] - 6s 188ms/step - loss: 1.2271 - acc: 0.5146 - val_loss: 1.6351 - val_acc: 0.4261
+Epoch 34/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2926 - acc: 0.4729Epoch 1/50
+33/33 [==============================] - 6s 187ms/step - loss: 1.2882 - acc: 0.4718 - val_loss: 1.6190 - val_acc: 0.3693
+Epoch 35/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2701 - acc: 0.5170Epoch 1/50
+33/33 [==============================] - 6s 185ms/step - loss: 1.2772 - acc: 0.5126 - val_loss: 1.5126 - val_acc: 0.3750
+Epoch 36/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2486 - acc: 0.5130Epoch 1/50
+33/33 [==============================] - 7s 211ms/step - loss: 1.2496 - acc: 0.5068 - val_loss: 1.5692 - val_acc: 0.3864
+Epoch 37/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2022 - acc: 0.5137Epoch 1/50
+33/33 [==============================] - 7s 213ms/step - loss: 1.1955 - acc: 0.5170 - val_loss: 1.5064 - val_acc: 0.4034
+Epoch 38/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2335 - acc: 0.5062Epoch 1/50
+33/33 [==============================] - 7s 205ms/step - loss: 1.2365 - acc: 0.5040 - val_loss: 1.4643 - val_acc: 0.4148
+Epoch 39/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2188 - acc: 0.4890Epoch 1/50
+33/33 [==============================] - 7s 206ms/step - loss: 1.2168 - acc: 0.4874 - val_loss: 1.4485 - val_acc: 0.3920
+Epoch 40/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2251 - acc: 0.5195Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.2150 - acc: 0.5184 - val_loss: 1.5478 - val_acc: 0.4205
+Epoch 41/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2281 - acc: 0.5130Epoch 1/50
+33/33 [==============================] - 6s 196ms/step - loss: 1.2375 - acc: 0.5068 - val_loss: 1.5324 - val_acc: 0.4318
+Epoch 42/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1648 - acc: 0.5311Epoch 1/50
+33/33 [==============================] - 6s 192ms/step - loss: 1.1682 - acc: 0.5301 - val_loss: 1.5814 - val_acc: 0.4034
+Epoch 43/50
+32/33 [============================>.] - ETA: 0s - loss: 1.2081 - acc: 0.5469Epoch 1/50
+33/33 [==============================] - 6s 189ms/step - loss: 1.2087 - acc: 0.5455 - val_loss: 1.5275 - val_acc: 0.4091
+Epoch 44/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1757 - acc: 0.5206Epoch 1/50
+33/33 [==============================] - 6s 186ms/step - loss: 1.1808 - acc: 0.5239 - val_loss: 1.5186 - val_acc: 0.3580
+Epoch 45/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1543 - acc: 0.5449Epoch 1/50
+33/33 [==============================] - 6s 189ms/step - loss: 1.1472 - acc: 0.5456 - val_loss: 1.6090 - val_acc: 0.4432
+Epoch 46/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1838 - acc: 0.5050Epoch 1/50
+33/33 [==============================] - 6s 183ms/step - loss: 1.1759 - acc: 0.5068 - val_loss: 1.4683 - val_acc: 0.4375
+Epoch 47/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1588 - acc: 0.5331Epoch 1/50
+33/33 [==============================] - 6s 186ms/step - loss: 1.1605 - acc: 0.5301 - val_loss: 1.4965 - val_acc: 0.4943
+Epoch 48/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1707 - acc: 0.5391Epoch 1/50
+33/33 [==============================] - 6s 183ms/step - loss: 1.1631 - acc: 0.5379 - val_loss: 1.5649 - val_acc: 0.3750
+Epoch 49/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1304 - acc: 0.5469Epoch 1/50
+33/33 [==============================] - 7s 200ms/step - loss: 1.1315 - acc: 0.5455 - val_loss: 1.4608 - val_acc: 0.4602
+Epoch 50/50
+32/33 [============================>.] - ETA: 0s - loss: 1.1041 - acc: 0.5631Epoch 1/50
+33/33 [==============================] - 6s 187ms/step - loss: 1.1118 - acc: 0.5573 - val_loss: 1.4734 - val_acc: 0.4034
+Loss:  1.4424578926780007 Accuracy:  0.4090909

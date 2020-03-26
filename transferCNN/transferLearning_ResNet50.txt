@@ -1,0 +1,159 @@
+PS C:\Users\Rotha Uy\Documents\firstaid_model\firstaid_model> python .\transferLearning_Resnet50.py
+Using TensorFlow backend.
+2020-03-24 17:19:07.801638: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2020-03-24 17:19:07.806038: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Found 531 images belonging to 2 classes.
+Found 183 images belonging to 2 classes.
+Found 177 images belonging to 2 classes.
+WARNING:tensorflow:From C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+2020-03-24 17:19:09.170710: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-03-24 17:19:09.204917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties:
+name: GeForce RTX 2070 major: 7 minor: 5 memoryClockRate(GHz): 1.62
+pciBusID: 0000:02:00.0
+2020-03-24 17:19:09.212576: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2020-03-24 17:19:09.216646: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cublas64_100.dll'; dlerror: cublas64_100.dll not found
+2020-03-24 17:19:09.220623: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cufft64_100.dll'; dlerror: cufft64_100.dll not found
+2020-03-24 17:19:09.230139: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'curand64_100.dll'; dlerror: curand64_100.dll not found
+2020-03-24 17:19:09.235758: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cusolver64_100.dll'; dlerror: cusolver64_100.dll not found
+2020-03-24 17:19:09.240986: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic 
+library 'cusparse64_100.dll'; dlerror: cusparse64_100.dll not found
+2020-03-24 17:19:09.257463: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-03-24 17:19:09.263925: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-03-24 17:19:09.271863: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2020-03-24 17:19:09.276333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-03-24 17:19:09.282032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]
+WARNING:tensorflow:From C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\backend\tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\keras_applications\resnet50.py:265: UserWarning: The output shape of `ResNet50(include_top=False)` has been changed since Keras 2.2.0.
+  warnings.warn('The output shape of `ResNet50(include_top=False)` '
+WARNING:tensorflow:From C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+Epoch 1/5
+33/33 [==============================] - 32s 984ms/step - loss: 0.7475 - accuracy: 0.5495 - val_loss: 0.6743 - val_accuracy: 0.6477
+Epoch 2/5
+33/33 [==============================] - 31s 950ms/step - loss: 0.6768 - accuracy: 0.6117 - val_loss: 0.7030 - val_accuracy: 0.3353
+Epoch 3/5
+33/33 [==============================] - 31s 949ms/step - loss: 0.6254 - accuracy: 0.6505 - val_loss: 0.6944 - val_accuracy: 0.5210
+Epoch 4/5
+33/33 [==============================] - 31s 948ms/step - loss: 0.6118 - accuracy: 0.6602 - val_loss: 0.7125 - val_accuracy: 0.3114
+Epoch 5/5
+33/33 [==============================] - 33s 990ms/step - loss: 0.5780 - accuracy: 0.7165 - val_loss: 0.7154 - val_accuracy: 0.3593
+C:\Users\Rotha Uy\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\engine\training.py:297: UserWarning: Discrepancy between trainable weights and collected trainable weights, did you set `model.trainable` without calling `model.compile` after ?
+  'Discrepancy between trainable weights and collected trainable'
+Epoch 1/50
+33/33 [==============================] - 33s 992ms/step - loss: 0.5750 - accuracy: 0.6913 - val_loss: 0.7094 - val_accuracy: 0.3409
+Epoch 2/50
+33/33 [==============================] - 32s 956ms/step - loss: 0.5866 - accuracy: 0.6932 - val_loss: 0.7054 - val_accuracy: 0.3353
+Epoch 3/50
+33/33 [==============================] - 32s 957ms/step - loss: 0.5358 - accuracy: 0.7146 - val_loss: 0.7044 - val_accuracy: 0.3533
+Epoch 4/50
+33/33 [==============================] - 32s 961ms/step - loss: 0.5300 - accuracy: 0.7573 - val_loss: 0.7182 - val_accuracy: 0.3174
+Epoch 5/50
+33/33 [==============================] - 32s 958ms/step - loss: 0.5205 - accuracy: 0.7495 - val_loss: 0.6991 - val_accuracy: 0.3772
+Epoch 6/50
+33/33 [==============================] - 32s 961ms/step - loss: 0.4729 - accuracy: 0.7767 - val_loss: 0.7090 - val_accuracy: 0.3293
+Epoch 7/50
+33/33 [==============================] - 35s 1s/step - loss: 0.4687 - accuracy: 0.7841 - val_loss: 0.6812 - val_accuracy: 0.2934
+Epoch 8/50
+33/33 [==============================] - 33s 1000ms/step - loss: 0.4573 - accuracy: 0.7689 - val_loss: 0.7227 - val_accuracy: 0.3533
+Epoch 9/50
+33/33 [==============================] - 33s 994ms/step - loss: 0.4811 - accuracy: 0.7888 - val_loss: 0.7009 - val_accuracy: 0.3533
+Epoch 10/50
+33/33 [==============================] - 35s 1s/step - loss: 0.4400 - accuracy: 0.8030 - val_loss: 0.6895 - val_accuracy: 0.3653
+Epoch 11/50
+33/33 [==============================] - 31s 941ms/step - loss: 0.4883 - accuracy: 0.7729 - val_loss: 0.7488 - val_accuracy: 0.2994
+Epoch 12/50
+33/33 [==============================] - 32s 961ms/step - loss: 0.4597 - accuracy: 0.7746 - val_loss: 0.7052 - val_accuracy: 0.3473
+Epoch 13/50
+33/33 [==============================] - 31s 941ms/step - loss: 0.4130 - accuracy: 0.8367 - val_loss: 0.7060 - val_accuracy: 0.3466
+Epoch 14/50
+33/33 [==============================] - 31s 939ms/step - loss: 0.4541 - accuracy: 0.8078 - val_loss: 0.7264 - val_accuracy: 0.3234
+Epoch 15/50
+33/33 [==============================] - 31s 949ms/step - loss: 0.4335 - accuracy: 0.8000 - val_loss: 0.7295 - val_accuracy: 0.3533
+Epoch 16/50
+33/33 [==============================] - 32s 956ms/step - loss: 0.4399 - accuracy: 0.8087 - val_loss: 0.7240 - val_accuracy: 0.2994
+Epoch 17/50
+33/33 [==============================] - 32s 966ms/step - loss: 0.4065 - accuracy: 0.8272 - val_loss: 0.6975 - val_accuracy: 0.3593
+Epoch 18/50
+33/33 [==============================] - 31s 945ms/step - loss: 0.4400 - accuracy: 0.7928 - val_loss: 0.6832 - val_accuracy: 0.3772
+Epoch 19/50
+33/33 [==============================] - 33s 1s/step - loss: 0.3907 - accuracy: 0.8542 - val_loss: 0.6944 - val_accuracy: 0.3293
+Epoch 20/50
+33/33 [==============================] - 31s 951ms/step - loss: 0.3990 - accuracy: 0.8427 - val_loss: 0.7088 - val_accuracy: 0.3473
+Epoch 21/50
+33/33 [==============================] - 31s 943ms/step - loss: 0.4052 - accuracy: 0.8388 - val_loss: 0.7595 - val_accuracy: 0.2994
+Epoch 22/50
+33/33 [==============================] - 30s 921ms/step - loss: 0.4138 - accuracy: 0.8227 - val_loss: 0.6957 - val_accuracy: 0.3713
+Epoch 23/50
+33/33 [==============================] - 32s 980ms/step - loss: 0.3687 - accuracy: 0.8485 - val_loss: 0.7361 - val_accuracy: 0.3114
+Epoch 24/50
+33/33 [==============================] - 30s 920ms/step - loss: 0.4158 - accuracy: 0.8088 - val_loss: 0.6997 - val_accuracy: 0.3473
+Epoch 25/50
+33/33 [==============================] - 32s 979ms/step - loss: 0.4099 - accuracy: 0.8258 - val_loss: 0.6968 - val_accuracy: 0.3409
+Epoch 26/50
+33/33 [==============================] - 31s 947ms/step - loss: 0.3661 - accuracy: 0.8660 - val_loss: 0.7305 - val_accuracy: 0.3234
+Epoch 27/50
+33/33 [==============================] - 31s 936ms/step - loss: 0.3827 - accuracy: 0.8466 - val_loss: 0.7268 - val_accuracy: 0.3473
+Epoch 28/50
+33/33 [==============================] - 33s 996ms/step - loss: 0.3667 - accuracy: 0.8505 - val_loss: 0.6980 - val_accuracy: 0.3653
+Epoch 29/50
+33/33 [==============================] - 31s 942ms/step - loss: 0.3568 - accuracy: 0.8350 - val_loss: 0.7030 - val_accuracy: 0.3293
+Epoch 30/50
+33/33 [==============================] - 30s 920ms/step - loss: 0.3682 - accuracy: 0.8586 - val_loss: 0.6949 - val_accuracy: 0.3533
+Epoch 31/50
+33/33 [==============================] - 32s 959ms/step - loss: 0.3713 - accuracy: 0.8523 - val_loss: 0.7439 - val_accuracy: 0.3353
+Epoch 32/50
+33/33 [==============================] - 31s 936ms/step - loss: 0.3760 - accuracy: 0.8621 - val_loss: 0.7228 - val_accuracy: 0.2934
+Epoch 33/50
+33/33 [==============================] - 31s 948ms/step - loss: 0.3604 - accuracy: 0.8641 - val_loss: 0.7014 - val_accuracy: 0.3593
+Epoch 34/50
+33/33 [==============================] - 31s 932ms/step - loss: 0.3720 - accuracy: 0.8641 - val_loss: 0.7107 - val_accuracy: 0.3413
+Epoch 35/50
+33/33 [==============================] - 31s 928ms/step - loss: 0.3757 - accuracy: 0.8330 - val_loss: 0.7132 - val_accuracy: 0.3413
+Epoch 36/50
+33/33 [==============================] - 31s 932ms/step - loss: 0.3409 - accuracy: 0.8777 - val_loss: 0.6902 - val_accuracy: 0.3353
+Epoch 37/50
+33/33 [==============================] - 32s 982ms/step - loss: 0.3462 - accuracy: 0.8544 - val_loss: 0.7181 - val_accuracy: 0.3409
+Epoch 38/50
+33/33 [==============================] - 32s 959ms/step - loss: 0.3220 - accuracy: 0.8674 - val_loss: 0.7043 - val_accuracy: 0.3293
+Epoch 39/50
+33/33 [==============================] - 32s 968ms/step - loss: 0.3463 - accuracy: 0.8446 - val_loss: 0.7461 - val_accuracy: 0.3713
+Epoch 40/50
+33/33 [==============================] - 31s 947ms/step - loss: 0.3415 - accuracy: 0.8660 - val_loss: 0.7054 - val_accuracy: 0.2994
+Epoch 41/50
+33/33 [==============================] - 31s 953ms/step - loss: 0.3613 - accuracy: 0.8583 - val_loss: 0.7277 - val_accuracy: 0.3653
+Epoch 42/50
+33/33 [==============================] - 31s 948ms/step - loss: 0.3020 - accuracy: 0.8796 - val_loss: 0.7634 - val_accuracy: 0.3234
+Epoch 43/50
+33/33 [==============================] - 31s 949ms/step - loss: 0.3531 - accuracy: 0.8524 - val_loss: 0.6690 - val_accuracy: 0.3653
+Epoch 44/50
+33/33 [==============================] - 32s 984ms/step - loss: 0.3170 - accuracy: 0.8731 - val_loss: 0.7064 - val_accuracy: 0.3413
+Epoch 45/50
+33/33 [==============================] - 33s 998ms/step - loss: 0.3369 - accuracy: 0.8602 - val_loss: 0.7197 - val_accuracy: 0.3114
+Epoch 46/50
+33/33 [==============================] - 31s 946ms/step - loss: 0.3118 - accuracy: 0.8718 - val_loss: 0.6920 - val_accuracy: 0.3533
+Epoch 47/50
+33/33 [==============================] - 32s 959ms/step - loss: 0.3104 - accuracy: 0.8924 - val_loss: 0.7378 - val_accuracy: 0.3234
+Epoch 48/50
+33/33 [==============================] - 32s 960ms/step - loss: 0.3167 - accuracy: 0.8674 - val_loss: 0.7359 - val_accuracy: 0.3413
+Epoch 49/50
+33/33 [==============================] - 32s 962ms/step - loss: 0.3062 - accuracy: 0.8757 - val_loss: 0.7153 - val_accuracy: 0.3352
+Epoch 50/50
+33/33 [==============================] - 31s 951ms/step - loss: 0.3186 - accuracy: 0.8805 - val_loss: 0.7297 - val_accuracy: 0.3234
+Loss:  0.5613284111022949 Accuracy:  0.34659090638160706
+PS C:\Users\Rotha Uy\Documents\firstaid_model\firstaid_model>
+
+
+
+
+
+
